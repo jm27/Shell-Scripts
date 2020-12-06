@@ -2,7 +2,7 @@
 
 # Author : Jesus Esquer
 # Script Name : Reverse Number
-
+echo ${PWD}
 echo Enter Number to Reverse
 read number
 num=$number
