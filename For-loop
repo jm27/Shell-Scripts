@@ -2,3 +2,11 @@
 
 # Author : Jesus Esquer
 # Script Name : For Loop
+
+# Create Array to loop trough
+array=(1 2 3 4 5 6 7 8 9 10)
+
+for el in ${array[@]}
+	do
+		echo $el
+	done
