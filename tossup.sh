@@ -32,5 +32,15 @@ do
 
 	echo "$x" # Output of roll
 	outcome="$(echo "$x"|grep red|grep -v green)" # v is reversed search
-	if [ "
+	if [ "$outcome" == "" ]
+	then
+		let win+=1
+	else
+		let lose+=1
+	fi
+	x=""
 done
+
+echo "-----------------"
+echo "Wins=$win"
+echo "Losses=$lose"
